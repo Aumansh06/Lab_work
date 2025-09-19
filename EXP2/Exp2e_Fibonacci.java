@@ -1,3 +1,4 @@
+package EXP2;
 import java.util.Scanner;
 
 public class Exp2e_Fibonacci {

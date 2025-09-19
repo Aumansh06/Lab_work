@@ -1,6 +1,7 @@
-import java.util.Scanner;
+package EXP3;
+import java.util.*;
 
-public class Exp3c_CountOddEven {
+public class Exp3f_RemoveDuplicates {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,15 +12,10 @@ public class Exp3c_CountOddEven {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
-        int even = 0, odd = 0;
+        LinkedHashSet<Integer> set = new LinkedHashSet<>();
+        for (int val : arr) set.add(val);
 
-        for (int val : arr) {
-            if (val % 2 == 0) even++;
-            else odd++;
-        }
-
-        System.out.println("Even numbers = " + even);
-        System.out.println("Odd numbers  = " + odd);
+        System.out.println("Array without duplicates: " + set);
         sc.close();    
     }
 }

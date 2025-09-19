@@ -1,6 +1,7 @@
-import java.util.*;
+package EXP3;
+import java.util.Scanner;
 
-public class Exp3f_RemoveDuplicates {
+public class Exp3e_ReverseArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,10 +12,10 @@ public class Exp3f_RemoveDuplicates {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
-        LinkedHashSet<Integer> set = new LinkedHashSet<>();
-        for (int val : arr) set.add(val);
-
-        System.out.println("Array without duplicates: " + set);
-        sc.close();    
+        System.out.println("Reversed Array:");
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+        sc.close();
     }
 }

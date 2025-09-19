@@ -1,6 +1,7 @@
+package EXP3;
 import java.util.Scanner;
 
-public class Exp3e_ReverseArray {
+public class Exp3d_SumElements {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,10 +12,15 @@ public class Exp3e_ReverseArray {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
-        System.out.println("Reversed Array:");
-        for (int i = n - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
+        int sumAll = 0, sumAlt = 0;
+
+        for (int i = 0; i < n; i++) {
+            sumAll += arr[i];
+            if (i % 2 == 0) sumAlt += arr[i];
         }
-        sc.close();
+
+        System.out.println("Sum of all elements      = " + sumAll);
+        System.out.println("Sum of alternate elements = " + sumAlt);
+        sc.close();    
     }
 }

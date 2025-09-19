@@ -1,3 +1,4 @@
+package EXP1;
 import java.util.Scanner;
 
 public class Exp1a_BasicOperations {

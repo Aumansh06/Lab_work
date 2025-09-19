@@ -1,3 +1,4 @@
+package EXP2;
 public class Exp2c_Patterns {
     public static void main(String[] args) {
         int n = 5;  // change this for bigger patterns

@@ -1,3 +1,4 @@
+package EXP3;
 import java.util.Scanner;
 
 public class Exp3a_MaxMinArray {

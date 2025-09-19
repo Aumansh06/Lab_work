@@ -1,6 +1,7 @@
+package EXP3;
 import java.util.Scanner;
 
-public class Exp3d_SumElements {
+public class Exp3c_CountOddEven {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,15 +12,15 @@ public class Exp3d_SumElements {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
-        int sumAll = 0, sumAlt = 0;
+        int even = 0, odd = 0;
 
-        for (int i = 0; i < n; i++) {
-            sumAll += arr[i];
-            if (i % 2 == 0) sumAlt += arr[i];
+        for (int val : arr) {
+            if (val % 2 == 0) even++;
+            else odd++;
         }
 
-        System.out.println("Sum of all elements      = " + sumAll);
-        System.out.println("Sum of alternate elements = " + sumAlt);
+        System.out.println("Even numbers = " + even);
+        System.out.println("Odd numbers  = " + odd);
         sc.close();    
     }
 }
